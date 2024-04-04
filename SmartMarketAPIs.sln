@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIController", "APIController\APIController.csproj", "{3641FD64-9466-4CB2-8FBD-D95DE108F91E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.SmartMarket", "Domain.SmartMarket\Domain.SmartMarket.csproj", "{918528DA-E705-4294-83DA-FBFD1C9162C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationServices.SmartMarket", "ApplicationServices.SmartMarket\ApplicationServices.SmartMarket.csproj", "{622C7BFB-A3AD-40DD-BE08-2625A69B7328}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBase.SmartMarket", "DataBase.SmartMarket\DataBase.SmartMarket.csproj", "{5676694B-ED1E-4479-A394-9CF7D3C5EF2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMarket.Test", "SmartMarket.Test\SmartMarket.Test.csproj", "{6C308636-0862-4CF9-B5AD-4FDD30D72C7F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3641FD64-9466-4CB2-8FBD-D95DE108F91E} = {3641FD64-9466-4CB2-8FBD-D95DE108F91E}
+		{622C7BFB-A3AD-40DD-BE08-2625A69B7328} = {622C7BFB-A3AD-40DD-BE08-2625A69B7328}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3641FD64-9466-4CB2-8FBD-D95DE108F91E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3641FD64-9466-4CB2-8FBD-D95DE108F91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3641FD64-9466-4CB2-8FBD-D95DE108F91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3641FD64-9466-4CB2-8FBD-D95DE108F91E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{918528DA-E705-4294-83DA-FBFD1C9162C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918528DA-E705-4294-83DA-FBFD1C9162C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918528DA-E705-4294-83DA-FBFD1C9162C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918528DA-E705-4294-83DA-FBFD1C9162C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{622C7BFB-A3AD-40DD-BE08-2625A69B7328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{622C7BFB-A3AD-40DD-BE08-2625A69B7328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{622C7BFB-A3AD-40DD-BE08-2625A69B7328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{622C7BFB-A3AD-40DD-BE08-2625A69B7328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5676694B-ED1E-4479-A394-9CF7D3C5EF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5676694B-ED1E-4479-A394-9CF7D3C5EF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5676694B-ED1E-4479-A394-9CF7D3C5EF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5676694B-ED1E-4479-A394-9CF7D3C5EF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C308636-0862-4CF9-B5AD-4FDD30D72C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C308636-0862-4CF9-B5AD-4FDD30D72C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C308636-0862-4CF9-B5AD-4FDD30D72C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C308636-0862-4CF9-B5AD-4FDD30D72C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCB1891D-7DB6-4552-85E7-4E2A7DD0056B}
+	EndGlobalSection
+EndGlobal

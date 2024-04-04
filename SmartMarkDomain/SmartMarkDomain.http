@@ -1,0 +1,6 @@
+@SmartMarkDomain_HostAddress = http://localhost:5192
+
+GET {{SmartMarkDomain_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
