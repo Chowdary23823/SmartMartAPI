@@ -11,4 +11,5 @@ namespace SmartMarkDomain
 
         public string Description { get; set; }
     }
+
 }

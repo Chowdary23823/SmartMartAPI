@@ -5,7 +5,9 @@ using ApplicationServicesOfAPI.SuperMarketOperations;
 using ApplicationServicesOfAPI.UserOperationsFile;
 using DataBaseContext;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics.Metrics;
 using System.Web.Http.Cors;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -44,6 +46,7 @@ builder.Services.AddScoped<UserOperations>();
 builder.Services.AddDbContext<DatabaseContext>(options =>
 {
     options.UseSqlServer("Server=localhost;Database=KushalSMA;Trusted_Connection=True;TrustServerCertificate=True;");
+    //Server = localhost; Database = master; Trusted_Connection = True;
 });
 
 
