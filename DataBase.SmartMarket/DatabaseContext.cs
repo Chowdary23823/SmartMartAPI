@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Domain.SmartMarket;
+using Microsoft.EntityFrameworkCore;
 using SmartMarkDomain;
 using System.Collections.Generic;
 
@@ -19,6 +20,8 @@ namespace DataBaseContext
 
 
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<SoldItems> SoldItems { get; set; }
         
     }
 }

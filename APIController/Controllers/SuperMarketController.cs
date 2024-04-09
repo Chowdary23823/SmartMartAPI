@@ -1,4 +1,5 @@
 ﻿using ApplicationServicesOfAPI.SuperMarketOperations;
+using Domain.SmartMarket;
 using Microsoft.AspNetCore.Mvc;
 using SmartMarkDomain;
 
@@ -43,6 +44,12 @@ namespace APIController.Controllers
         public Product DeleteProduct(int id)
         {
             return superMarketOperations.DeleteProduct(id);
+        }
+
+        [HttpPost]
+        public void AddSoldItems(List<SoldItems> list)
+        {
+            superMarketOperations.AddSoldItems(list);
         }
 
 

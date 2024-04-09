@@ -1,4 +1,5 @@
 ﻿using DataBaseContext;
+using Domain.SmartMarket;
 using Microsoft.EntityFrameworkCore;
 using SmartMarkDomain;
 
@@ -109,6 +110,27 @@ namespace ApplicationServicesOfAPI.SuperMarketOperations
             {
                 return null;
             }
+        }
+
+
+
+        public void AddSoldItems(List<SoldItems> list)
+        {
+            
+            foreach (var item in list)
+            {
+                try
+                {
+                    _dbObj.SoldItems.Add(item);
+                    SubQuantityOfProduct(item.ItemId, item.Quantity);
+                    _dbObj.SaveChanges();
+                }catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+
+            }
+
         }
 
 
