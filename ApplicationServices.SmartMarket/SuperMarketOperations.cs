@@ -133,6 +133,23 @@ namespace ApplicationServicesOfAPI.SuperMarketOperations
 
         }
 
+        public List<SoldItems> GetAllSoldItems()
+        {
+            try
+            {
+                List<SoldItems> soldItems;
+                soldItems = _dbObj.SoldItems.ToList();
+                if (soldItems == null || soldItems.Count <= 0)
+                    return null;
+                return soldItems;
+
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
 
     }
 }

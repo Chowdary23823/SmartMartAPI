@@ -53,6 +53,13 @@ namespace APIController.Controllers
         }
 
 
+        [HttpGet]
+        public List<SoldItems> GetAllSoldItems()
+        {
+            return superMarketOperations.GetAllSoldItems();
+        }
+
+
 
 
     }
