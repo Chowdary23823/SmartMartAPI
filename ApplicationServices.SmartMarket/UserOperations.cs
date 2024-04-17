@@ -23,7 +23,7 @@ namespace ApplicationServicesOfAPI.UserOperationsFile
                         .Include(obj => obj.SubCategory)
                         .Include(obj => obj.SubCategory.Category)
                         .Where(obj => obj.Name == keyProductName)
-                        .ToList();
+                        .ToList();  
                 if (products == null || products.Count <= 0)
                     return null;
                 return products;

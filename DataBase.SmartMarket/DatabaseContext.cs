@@ -22,6 +22,9 @@ namespace DataBaseContext
         public DbSet<Product> Products { get; set; }
 
         public DbSet<SoldItems> SoldItems { get; set; }
+
+
+        public DbSet<Users> Users {  get; set; }
         
     }
 }

@@ -1,4 +1,5 @@
 using APIController;
+using ApplicationServices.SmartMarket;
 using ApplicationServicesOfAPI;
 using ApplicationServicesOfAPI.SubCategoriesOperationsFile;
 using ApplicationServicesOfAPI.SuperMarketOperations;
@@ -38,6 +39,7 @@ builder.Services.AddScoped<CategoryOperations>();
 builder.Services.AddScoped<SubCategoriesOperations>();
 builder.Services.AddScoped<SuperMarketOperations>();
 builder.Services.AddScoped<UserOperations>();
+builder.Services.AddScoped<AuthOperations>();
 /*builder.Services.AddEntityFrameworkNpgsql().AddDbContext<DatabaseContext>(options =>
 {
     options.UseNpgsql("Server=192.168.5.150;Port=5432;User Id=postgres;Password=n@v@yUg@kw!x##;Database=SmartMarketKushal;Pooling=true;");
